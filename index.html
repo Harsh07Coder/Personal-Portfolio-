@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harsh Ranjan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;        /* slate-900 */
+      --card:#111827;      /* gray-900 */
+      --muted:#94a3b8;     /* slate-400 */
+      --text:#e5e7eb;      /* gray-200 */
+      --accent:#22c55e;    /* green-500 */
+      --accent-2:#38bdf8;  /* sky-400 */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    a{color:var(--accent-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid #1f2937}
+    .logo{font-weight:800;letter-spacing:.3px}
+    nav{display:flex;gap:18px}
+    nav a{color:var(--muted);font-weight:600}
+    nav a.active{color:var(--text)}
+    .hero{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:28px;
+      padding:40px 0
+    }
+    .hero-card{
+      background:linear-gradient(140deg,#111827 0%,#0b1222 60%);
+      border:1px solid #1f2937;border-radius:16px;padding:28px
+    }
+    .tag{display:inline-block;background:#0b1222;border:1px solid #1f2937;color:var(--muted);padding:6px 10px;border-radius:999px;font-size:.85rem}
+    h1{font-size:2rem;margin:14px 0}
+    .highlight{color:var(--accent)}
+    .sub{color:var(--muted);line-height:1.6}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid #1f2937;background:#0b1222;color:var(--text);font-weight:600}
+    .btn.primary{background:var(--accent);border-color:#16a34a;color:#052e14}
+    .btn.secondary{background:#0b1222}
+    .panel{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:22px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .section-title{font-weight:800;letter-spacing:.2px;margin:28px 0 12px}
+    .muted{color:var(--muted)}
+    .list{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:#0b1222;border:1px solid #1f2937;color:var(--text);padding:8px 12px;border-radius:999px;font-size:.9rem}
+    .project{padding:14px;border-radius:12px;background:#0c1528;border:1px solid #1f2937}
+    .project h4{margin:6px 0 8px}
+    .project p{color:var(--muted);margin:0 0 10px}
+    .project a{font-weight:600}
+    .blog-card{padding:14px;border-radius:12px;background:#0c1528;border:1px solid #1f2937}
+    footer{margin:36px 0 18px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap}
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      nav{display:none}
+      .grid{grid-template-columns:1fr}
+      .hero-card{padding:22px}
+      h1{font-size:1.6rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">Harsh Ranjan</div>
+      <nav>
+        <a href="#about" class="active">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-card">
+        <span class="tag">Student • Web Development</span>
+        <h1>Hi, I’m <span class="highlight">Harsh Ranjan</span>.</h1>
+        <p class="sub">
+          First-year student studying at KIET, Ghaziabad. I’m building strong fundamentals in HTML, CSS, and JavaScript,
+          and I enjoy turning ideas into clean, functional web projects.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn secondary" href="#contact">Contact me</a>
+          <a class="btn secondary" href="#" title="Add your resume link here">Resume</a>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="section-title">Quick facts</div>
+        <ul class="muted" style="margin:0;padding-left:18px;line-height:1.8">
+          <li>Studying at KIET, Ghaziabad (IT/Web track)</li>
+          <li>Comfortable with HTML, CSS, and beginner-level JavaScript</li>
+          <li>Practicing C programming for logic and problem-solving</li>
+          <li>Interested in building portfolio, event pages, and learning platforms</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="panel">
+      <div class="section-title">About</div>
+      <p class="muted">
+        I’m a methodical learner who values clarity and hands-on practice.
+        My current focus is full‑stack basics: clean HTML structure, modern CSS, and interactive JS.
+        I’m also exploring design principles to present projects clearly and professionally.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="panel">
+      <div class="section-title">Projects</div>
+      <div class="grid">
+        <div class="project">
+          <h4>Portfolio website</h4>
+          <p>A responsive personal site showcasing skills, projects, and a blog.</p>
+          <a href="#" title="Add your GitHub or live demo link">Live demo</a>
+        </div>
+        <div class="project">
+          <h4>Event landing page</h4>
+          <p>Clean layout with schedule, speakers, and registration form validation.</p>
+          <a href="#" title="Add your GitHub or live demo link">Repository</a>
+        </div>
+        <div class="project">
+          <h4>Recipe blog</h4>
+          <p>Lightweight blog template with tags, search, and responsive cards.</p>
+          <a href="#" title="Add your GitHub or live demo link">Live demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="panel">
+      <div class="section-title">Skills</div>
+      <div class="list">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript (basics)</span>
+        <span class="chip">Responsive design</span>
+        <span class="chip">Git & GitHub</span>
+        <span class="chip">C programming</span>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="panel">
+      <div class="section-title">Blog</div>
+      <div class="grid-2">
+        <article class="blog-card">
+          <h4>How I structure HTML for clarity</h4>
+          <p class="muted">Thoughts on semantic tags, accessibility, and making code readable.</p>
+          <a href="#" title="Link to your blog post">Read post</a>
+        </article>
+        <article class="blog-card">
+          <h4>Getting comfortable with CSS layouts</h4>
+          <p class="muted">From Flexbox to Grid — tips I used to make pages responsive.</p>
+          <a href="#" title="Link to your blog post">Read post</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="panel">
+      <div class="section-title">Contact</div>
+      <p class="muted">Want to collaborate or review code together? Reach out:</p>
+      <div class="list">
+        <a class="chip" href="mailto:harsh.ranjan@example.com" title="Replace with your email">Email</a>
+        <a class="chip" href="https://github.com/your-username" target="_blank" title="Replace with your GitHub">GitHub</a>
+        <a class="chip" href="https://www.linkedin.com/in/your-username" target="_blank" title="Replace with your LinkedIn">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <span>© <span id="year"></span> Harsh Ranjan</span>
+      <span>Made with HTML & CSS</span>
+    </footer>
+  </div>
+
+  <script>
+    // Update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
